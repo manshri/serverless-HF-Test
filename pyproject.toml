@@ -1,0 +1,16 @@
+[project]
+name = "serverless-hf-test"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = [
+    "indictranstoolkit",
+    "runpod>=1.7.7",
+    "sentencepiece>=0.2.0",
+    "torch>=2.6.0",
+    "transformers>=4.49.0",
+]
+
+[tool.uv.sources]
+indictranstoolkit = { path = "../IndicTransToolkit", editable = true }
